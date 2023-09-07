@@ -11,7 +11,7 @@ using System.Threading.Tasks;
 
 namespace NetAssembly.Protection
 {
-    internal class JunkMethod
+    internal class WaterMark
     {
         public static void Execute(ModuleDef module)
         {
