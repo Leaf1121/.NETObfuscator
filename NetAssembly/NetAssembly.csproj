@@ -66,13 +66,16 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Protection\antiDe4dot.cs" />
+    <Compile Include="Protection\CF.cs" />
     <Compile Include="Protection\FlowControl\Block.cs" />
     <Compile Include="Protection\FlowControl\BlockParser.cs" />
     <Compile Include="Protection\FlowControl\ControlFlowObfuscation.cs" />
     <Compile Include="Protection\FlowControl\JumpCFlow.cs" />
+    <Compile Include="Protection\JunkMethod.cs" />
     <Compile Include="Protection\Renamer\RenamerPhase.cs" />
     <Compile Include="Protection\StringEncryption\stringEncryption.cs" />
-    <Compile Include="Utils\RandomString.cs" />
+    <Compile Include="Utils\Random.cs" />
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>

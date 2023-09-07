@@ -50,12 +50,14 @@ namespace NetAssembly
             ControlFlowObfuscation.CtrlFlow(module);
             JumpCFlow.Execute(module);
             stringEncryption.Inject(module);
+            antiDe4dot.Execute(module.Assembly);
             RenamerPhase.ExecuteNamespaceRenaming(module);
             RenamerPhase.ExecuteModuleRenaming(module);
             RenamerPhase.ExecuteClassRenaming(module);
             RenamerPhase.ExecutePropertiesRenaming(module);
             RenamerPhase.ExecuteFieldRenaming(module);
             RenamerPhase.ExecuteMethodRenaming(module);
+            WaterMark.Execute(module);
             SaveAssembly(module, filePath);
         }
 
