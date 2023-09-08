@@ -47,6 +47,7 @@ namespace NetAssembly
         private void metroButton2_Click(object sender, EventArgs e)
         {
             ModuleDefMD module = ModuleDefMD.Load(filePath);
+
             ControlFlowObfuscation.CtrlFlow(module);
             JumpCFlow.Execute(module);
             stringEncryption.Inject(module);

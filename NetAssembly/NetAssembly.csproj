@@ -75,6 +75,7 @@
     <Compile Include="Protection\Renamer\RenamerPhase.cs" />
     <Compile Include="Protection\StringEncryption\stringEncryption.cs" />
     <Compile Include="Utils\Random.cs" />
+    <Compile Include="Utils\Randomizer.cs" />
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>

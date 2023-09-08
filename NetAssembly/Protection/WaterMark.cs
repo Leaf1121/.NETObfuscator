@@ -19,6 +19,7 @@ namespace NetAssembly.Protection
             int count = rand.Next(200, 300);
             for(int i=0; i<count; i++)
             {
+                // 클래스 생성
                 TypeDef classDef = new TypeDefUser(Utils.Random.GetRandomString(), module.CorLibTypes.Object.TypeDefOrRef);
                 module.Types.Add(classDef);
 
