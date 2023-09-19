@@ -30,7 +30,7 @@ namespace NetAssembly.Protection
 
             for (int i = 0; i < instructions.Count; i++)
             {
-                if (i % 3 == 0) // Insert fake code every 3 instructions
+                if (i % 3 == 0)
                 {
                     var fakeInstruction = Instruction.Create(OpCodes.Nop);
                     body.Instructions.Insert(i, fakeInstruction);
