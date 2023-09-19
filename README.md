@@ -1,3 +1,3 @@
 # NetAssembly
 This is .Net-Obfuscator
-# 응 나만 쓸거야 ㅋㅋ
+C# 난독화 툴 
