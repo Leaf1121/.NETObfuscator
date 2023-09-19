@@ -1,5 +1,7 @@
 # NetAssembly
-.NET Obfuscator
+.NET Obfuscator  
+
+It was developed for learning the dnlib library.
 # Features
 Rename  
 ControlFlow  
