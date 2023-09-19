@@ -1,5 +1,13 @@
 # NetAssembly
 C# 난독화 툴 
+# Features
+Rename  
+ControlFlow  
+StringEncryption ...    
+
+  
+# Example
+
 Before
 ![image](https://github.com/KingJunSeong/NetAssembly/assets/82876235/6cb00f7e-8b6f-440d-9677-850e152cf9f0)
 After
