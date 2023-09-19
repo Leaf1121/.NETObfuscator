@@ -1,5 +1,5 @@
 # NetAssembly
-C# 난독화 툴 
+.NET Obfuscator
 # Features
 Rename  
 ControlFlow  
