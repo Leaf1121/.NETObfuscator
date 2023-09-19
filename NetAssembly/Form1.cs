@@ -50,6 +50,7 @@ namespace NetAssembly
 
             ControlFlowObfuscation.CtrlFlow(module);
             JumpCFlow.Execute(module);
+            FakeCode.Execute(module);
             stringEncryption.Inject(module);
             antiDe4dot.Execute(module.Assembly);
             RenamerPhase.ExecuteNamespaceRenaming(module);

@@ -67,6 +67,7 @@
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Protection\antiDe4dot.cs" />
+    <Compile Include="Protection\FakeCode.cs" />
     <Compile Include="Protection\FlowControl\Block.cs" />
     <Compile Include="Protection\FlowControl\BlockParser.cs" />
     <Compile Include="Protection\FlowControl\ControlFlowObfuscation.cs" />
