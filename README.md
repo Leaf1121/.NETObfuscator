@@ -2,6 +2,9 @@
 .NET Obfuscator  
 
 It was developed for learning the dnlib library.
+
+# This project has been suspended
+
 # Features
 Rename  
 ControlFlow  
