@@ -1,7 +1,8 @@
 # NetAssembly
 .NET Obfuscator  
 
-It was developed for learning the dnlib library.
+.NET SourceCode Protector Program.
+We're going to add features and edit Design
 
 # We will resume development soon.
 
