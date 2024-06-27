@@ -3,7 +3,7 @@
 
 It was developed for learning the dnlib library.
 
-# This project has been suspended
+# We will resume development soon.
 
 # Features
 Rename  
