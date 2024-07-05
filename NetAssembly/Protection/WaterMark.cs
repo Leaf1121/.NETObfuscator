@@ -13,7 +13,7 @@ namespace NetAssembly.Protection
 {
     internal class WaterMark
     {
-        public static void Execute(ModuleDef module)
+        public static void Execute(ModuleDef module, string watermark)
         {
             Random rand = new Random();
             int count = rand.Next(200, 300);
@@ -28,7 +28,7 @@ namespace NetAssembly.Protection
                 CilBody body = new CilBody();
                 methodDef.Body = body;
                 body.MaxStack = 8;
-                body.Instructions.Add(OpCodes.Ldstr.ToInstruction("water_mark"));
+                body.Instructions.Add(OpCodes.Ldstr.ToInstruction(watermark));
                 body.Instructions.Add(OpCodes.Ret.ToInstruction());
             }
         }

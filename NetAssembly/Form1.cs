@@ -1,7 +1,6 @@
 ﻿using dnlib.DotNet;
 using dnlib.DotNet.Writer;
 using NetAssembly.Protection;
-using NetAssembly.Protection.FlowControl;
 using NetAssembly.Protection.Renamer;
 using NetAssembly.Protection.StringEncryption;
 using System;
@@ -29,6 +28,7 @@ namespace NetAssembly
         private void Form1_Load(object sender, EventArgs e)
         {
             metroTextBox1.Enabled = false;
+            WaterMark_txt.Enabled = false;
         }
 
         private void metroButton1_Click(object sender, EventArgs e)
@@ -46,20 +46,34 @@ namespace NetAssembly
 
         private void metroButton2_Click(object sender, EventArgs e)
         {
+            if (!Check_ControlFlow.Checked && !Check_FakeCode.Checked && !Check_StringEncryption.Checked && !Check_AntiDe4dot.Checked && !Check_Renamer.Checked)
+            {
+                MessageBox.Show("Select Option");
+                return;
+            }
+            if(Check_WaterMark.Checked && WaterMark_txt.Text == "")
+            {
+                MessageBox.Show("Please enter a phrase");
+                return;
+            }
+
             ModuleDefMD module = ModuleDefMD.Load(filePath);
 
-            ControlFlowObfuscation.CtrlFlow(module);
-            JumpCFlow.Execute(module);
-            FakeCode.Execute(module);
-            stringEncryption.Inject(module);
-            antiDe4dot.Execute(module.Assembly);
-            RenamerPhase.ExecuteNamespaceRenaming(module);
-            RenamerPhase.ExecuteModuleRenaming(module);
-            RenamerPhase.ExecuteClassRenaming(module);
-            RenamerPhase.ExecutePropertiesRenaming(module);
-            RenamerPhase.ExecuteFieldRenaming(module);
-            RenamerPhase.ExecuteMethodRenaming(module);
-            WaterMark.Execute(module);
+            if (Check_ControlFlow.Checked) ControlFlowObfuscation.CtrlFlow(module);
+            if (Check_FakeCode.Checked) FakeCode.Execute(module);
+            if (Check_StringEncryption.Checked) stringEncryption.Inject(module);
+            if (Check_AntiDe4dot.Checked) antiDe4dot.Execute(module.Assembly);
+            if (Check_Renamer.Checked)
+            {
+                RenamerPhase.ExecuteNamespaceRenaming(module);
+                RenamerPhase.ExecuteModuleRenaming(module);
+                RenamerPhase.ExecuteClassRenaming(module);
+                RenamerPhase.ExecutePropertiesRenaming(module);
+                RenamerPhase.ExecuteFieldRenaming(module);
+                RenamerPhase.ExecuteMethodRenaming(module);
+            }
+            if (Check_WaterMark.Checked) WaterMark.Execute(module, WaterMark_txt.Text);
+
             SaveAssembly(module, filePath);
         }
 
@@ -74,6 +88,19 @@ namespace NetAssembly
 
             module.Write(savePath, opts);
             MessageBox.Show("Done.");
+        }
+
+        private void Check_WaterMark_CheckedChanged(object sender, EventArgs e)
+        {
+            if (Check_WaterMark.Checked)
+            {
+                WaterMark_txt.Enabled = true;
+                WaterMark_txt.Focus();
+            }
+            else
+            {
+                WaterMark_txt.Enabled = false;
+            }
         }
     }
 }
