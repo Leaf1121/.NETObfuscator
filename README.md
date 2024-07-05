@@ -4,22 +4,6 @@
 .NET SourceCode Protector Program.
 We're going to add features and edit Design
 
-# We will resume development soon.
-
-# Features
-
-ControlFlow
-
-Fake Code
-
-String Encryption
-
-Anti De4dot
-
-Rename
-
-WaterMark
-
 # Picture
 
 Main UI
