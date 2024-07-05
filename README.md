@@ -1,12 +1,10 @@
 # NetAssembly
-.NET Obfuscator  
-
+.NET Obfuscator  <br>
 .NET SourceCode Protector Program.
 We're going to add features and edit Design
 
 # UI
-Main UI
-
+Main UI <br>
 ![image](https://github.com/PoLamFe1121/.NETObfuscator/assets/82876235/58f46099-aef2-43c8-997b-d11040df97f1)
 
 # Obfuscation
