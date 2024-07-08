@@ -1,6 +1,6 @@
 # NetAssembly
-.NET Obfuscator  <br>
-.NET SourceCode Protector Program.
+>.NET Obfuscator is a tool that is used to protect .NET applications from reverse engineering. <br>
+
 We're going to add features and edit Design
 
 # UI
