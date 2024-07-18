@@ -2,9 +2,9 @@
 .NET Obfuscator is a tool that is used to protect .NET applications from reverse engineering.
 <br>
 # Update
- * Adding Log Save Features
+Log Save Features
 <br>
-
+UI Frzeeing solve
 # Features
  * Control Flow
  * Fake Code
