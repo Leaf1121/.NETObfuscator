@@ -5,7 +5,10 @@ We're going to add features and edit Design
 
 # UI
 Main UI <br>
-![image](https://github.com/PoLamFe1121/.NETObfuscator/assets/82876235/58f46099-aef2-43c8-997b-d11040df97f1)
+![image](https://github.com/user-attachments/assets/4a221299-e0db-4ff3-8359-f1d5436418a2)
+<br>
+![image](https://github.com/user-attachments/assets/7b9687dd-bb6a-4870-8c90-7631672fa253)
+
 
 # Obfuscation
 Before
