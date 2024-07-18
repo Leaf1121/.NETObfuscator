@@ -1,6 +1,8 @@
 # NetAssembly
 .NET Obfuscator is a tool that is used to protect .NET applications from reverse engineering.
 <br>
+using dnlib
+<br>
 # Update
 Log Save Features
 <br>
